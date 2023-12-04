@@ -1,0 +1,23 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "regression": "npx playwright test --grep @Web",
+    "alltest": "npx playwright test",
+    "UITests": "npx playwright test --ui",
+    "Debugger": "npx playwright test tests/UIInteractions.spec.js --debug",
+    "CaptureandPlay": "npx playwright codegen"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.35.1",
+    "allure-playwright": "^2.4.0"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^9.1.2"
+  }
+}
